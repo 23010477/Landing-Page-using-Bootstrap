@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,29 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg sticky-top ps-3 pe-3">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="btn main-btn d-lg-none mt-2" href="./login.html" target="_blank">Login</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="btn main-btn d-lg-none mt-2" href="./login.html" target="_blank">Login</a>
+                </div>
             </div>
+            <div class="search ps-3 pe-3 d-none d-lg-block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a class="btn main-btn d-none d-lg-block" href="./login.html" target="_blank">Login</a>
         </div>
-        <div class="search ps-3 pe-3 d-none d-lg-block">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <a class="btn main-btn d-none d-lg-block" href="./login.html" target="_blank">Login</a>
-    </div>
     </nav>
     <!-- landing  -->
     <div class="Landing d-flex align-items-center">
@@ -40,7 +42,7 @@
         </div>
     </div>
     <!-- features  -->
-    <div class="features text-center pt-5 pb-5">
+    <div class="features text-center pt-5 pb-5 ">
         <div class="container">
             <div class="main-title">
                 <h2>Features</h2>
@@ -62,10 +64,64 @@
                     <h4>Customizable</h4>
                     <p>Tailor the experience to fit your needs with our flexible options.</p>
                 </div>
+            </div>
         </div>
-    </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
+        <!-- my work  -->
+        <div class="mywork pt-5 pb-5 mt-5 mb-5">
+            <div class="container">
+                <div class="main-title">
+                    <h2>My Work</h2>
+                    <hr>
+                </div>
+                <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
+                    <li class="active">All</li>
+                    <li>Website</li>
+                    <li>Software</li>
+                    <li>Hardware</li>
+                    <li>Media</li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="box mb-3">
+                            <img src="./download.png" class="img-fluid" alt="">
+                            <div class="box-content">
+                                <h4>Project Name</h4>
+                                <p>Project Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="box mb-3">
+                            <img src="./download.png" class="img-fluid" alt="">
+                            <div class="box-content">
+                                <h4>Project Name</h4>
+                                <p>Project Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="box mb-3">
+                            <img src="./download.png" class="img-fluid" alt="">
+                            <div class="box-content">
+                                <h4>Project Name</h4>
+                                <p>Project Description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="box mb-3">
+                            <img src="./download.png" class="img-fluid" alt="">
+                            <div class="box-content">
+                                <h4>Project Name</h4>
+                                <p>Project Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
 </body>
 
 </html>

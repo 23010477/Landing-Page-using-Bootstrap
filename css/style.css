@@ -1,7 +1,7 @@
 :root {
     --dark-color: #0e2241;
     --text-color: #ffffff;
-    --theme-color: #250217;
+    --theme-color: #30001d;
     --secondary-color: #0090bc;
     --active-color: #3ae5ff;
     --black:#000000;
@@ -71,7 +71,7 @@
 /* landig section  */
 .Landing {
     background-color: var(--theme-color);
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 200px);
     color: var(--text-color);
 }
 /* features section */
@@ -99,4 +99,35 @@
     background-color: var(--active-color);
     color: var(--black);
     transform: translateY(-10px);
+}
+/* my work section  */
+.mywork {
+    background-color: var(--theme-color);
+}
+.mywork ul .active{
+    background-color: var(--active-color);
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.mywork ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.mywork ul li:not(.active):hover , .mywork ul li:not(.active):focus {
+    color: var(--active-color);
+}
+.mywork .box {
+    background-color: var(--black);
+    border:1px solid var(--active-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: all 0.4s ease-in-out;
+}
+.mywork .box:hover , .mywork .box:focus {
+    background-color: var(--active-color);
+    transform: translateY(-10px);
+    color: var(--black);
 }
