@@ -1,0 +1,102 @@
+:root {
+    --dark-color: #0e2241;
+    --text-color: #ffffff;
+    --theme-color: #250217;
+    --secondary-color: #0090bc;
+    --active-color: #3ae5ff;
+    --black:#000000;
+}
+@font-face {
+    font-family: "FontAwesomeBrands";
+    src: url("../webfonts/fa-brands-400.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "FontAwesomeRegular";
+    src: url("../webfonts/fa-regular-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "FontAwesomeSolid";
+    src: url("../webfonts/fa-solid-900.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+/* navbar section  */
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-brand {
+    color: var(--active-color);
+    font-family: "FontAwesomeSolid", sans-serif;
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--text-color);
+}
+.navbar .navbar-nav .nav-link:hover , .navbar .navbar-nav .nav-link:focus {
+    color: var(--active-color);
+}
+.search {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-left: 1px solid var(--text-color);
+}
+.search:hover , .search:focus {
+    color: var(--active-color);
+}
+.main-btn {
+    background-color: var(--active-color);
+    border: none;
+}
+.main-btn:hover , .main-btn:focus {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+.navbar-toggler {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+    border-color: var(--theme-color);
+}
+/* landig section  */
+.Landing {
+    background-color: var(--theme-color);
+    min-height: calc(100vh - 100px);
+    color: var(--text-color);
+}
+/* features section */
+.features .main-title h2 {
+    color: var(--active-color);
+}
+.features .main-title hr {
+    width: 100px;
+    height: 4px;
+    background-color: var(--active-color);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.features {
+    background-color: var(--black);
+}
+.features .cardx {
+    background-color: var(--theme-color);
+    border:1px solid var(--active-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: all 0.4s ease-in-out;
+}
+.features .cardx:hover , .features .cardx:focus {
+    background-color: var(--active-color);
+    color: var(--black);
+    transform: translateY(-10px);
+}
